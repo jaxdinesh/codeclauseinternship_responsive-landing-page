@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sticky Header -->
+    <header class="header">
+        <div class="navbar">
+            <h1 class="logo">EduLearn</h1>
+            <nav>
+                <a href="#courses">Courses</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#sign-up">Sign Up</a>
+            </nav>
+        </div>
+        <div class="header-content">
+            <h2>Welcome to Our Educational Platform</h2>
+            <p>Your journey to knowledge starts here!</p>
+            <a href="#sign-up" class="cta-button">Sign Up Now</a>
+        </div>
+    </header>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <h2>Why Learn with Us?</h2>
+        <div class="benefit-list">
+            <div class="benefit">
+                <h3>Expert Instructors</h3>
+                <p>Learn from industry experts with years of experience.</p>
+            </div>
+            <div class="benefit">
+                <h3>Flexible Learning</h3>
+                <p>Study at your own pace with our self-paced courses.</p>
+            </div>
+            <div class="benefit">
+                <h3>Hands-On Projects</h3>
+                <p>Apply what you learn through real-world projects and challenges.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <h2>Our Popular Courses</h2>
+        <div class="course-list">
+            <div class="course">
+                <h3>Web Development</h3>
+                <p>Learn the essentials of HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="course">
+                <h3>Data Science</h3>
+                <p>Dive into data analysis and machine learning.</p>
+            </div>
+            <div class="course">
+                <h3>Digital Marketing</h3>
+                <p>Master SEO, content creation, and social media marketing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Students Say</h2>
+        <div class="testimonial-list">
+            <div class="testimonial">
+                <p>"This platform transformed my career. I went from a beginner to a web developer in just a few months!"</p>
+                <span>- Alex T., Web Development Student</span>
+            </div>
+            <div class="testimonial">
+                <p>"The data science course was thorough and hands-on. I now feel confident working on data projects."</p>
+                <span>- Maria L., Data Science Graduate</span>
+            </div>
+            <div class="testimonial">
+                <p>"Great content and instructors. I saw an immediate improvement in my marketing skills!"</p>
+                <span>- Josh P., Digital Marketing Specialist</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sign-Up Section -->
+    <section id="sign-up" class="sign-up">
+        <h2>Sign Up for a Course</h2>
+        <form id="signupForm" onsubmit="handleSubmit(event)">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <label for="course">Select a Course:</label>
+            <select id="course" required>
+                <option value="" disabled selected>Select a course</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+            </select>
+            <button type="submit" class="submit-button">Sign Up</button>
+        </form>
+        <p id="successMessage" class="success-message"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Contact Us</p>
+            <p>Email: support@edulearn.com | Phone: +123-456-7890</p>
+            <p>&copy; 2024 EduLearn. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and Navbar */
+.header {
+    position: relative;
+    background: linear-gradient(135deg, #131921 30%, #1a1f2b 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.header h2 {
+    font-size: 2.5rem;
+    color: #FF9900;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(19, 25, 33, 0.8);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s;
+}
+
+.navbar.sticky {
+    background: #131921;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: #FF9900;
+    font-weight: bold;
+}
+
+.navbar nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #FF9900;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #FF9900;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #ffa833;
+}
+
+/* Benefits Section */
+.benefits {
+    padding: 60px 20px;
+    background-color: #f8f9fb;
+    text-align: center;
+}
+
+.benefits h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.benefit-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    background: linear-gradient(135deg, #e9ecef, #ffffff);
+    padding: 25px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.benefit:hover {
+    transform: translateY(-10px);
+}
+
+.benefit h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.benefit p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Courses Section */
+.courses {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.courses h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.course-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.course {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.course:hover {
+    transform: translateY(-10px);
+}
+
+.course h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.course p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 20px;
+    background-color: #f7f9fc;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.testimonial-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    transition: transform 0.3s;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Sign-Up Section */
+.sign-up {
+    padding: 60px 20px;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.sign-up h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: #FF9900;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #ffa833;
+}
+
+/* Success Message */
+.success-message {
+    color: green;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    background-color: #131921;
+    color: #ddd;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    color: #aaa;
+}
